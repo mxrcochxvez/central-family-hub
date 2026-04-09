@@ -1,12 +1,12 @@
 {
   "name": "family-hub-design-schema",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "principles": [
     "Civic-inspired trust",
     "Event-first layout",
     "Minimal copy",
     "Clear public-service hierarchy",
-    "Consistent municipal blue accents"
+    "Square municipal geometry"
   ],
   "tokens": {
     "colors": {
@@ -24,10 +24,10 @@
       "goldRule": "#d9a441"
     },
     "radius": {
-      "lg": "20px",
-      "md": "14px",
-      "sm": "10px",
-      "pill": "999px"
+      "lg": "0px",
+      "md": "0px",
+      "sm": "0px",
+      "pill": "0px"
     },
     "shadow": {
       "soft": "0 8px 24px rgba(15, 23, 42, 0.06)",
@@ -53,23 +53,23 @@
   "components": {
     "civicBand": {
       "purpose": "Municipal header anchor",
-      "style": ["deep blue band", "gold divider rule", "white utility action"]
+      "style": ["deep blue band", "gold divider rule", "white utility action", "square geometry"]
     },
     "hero": {
       "purpose": "Orientation block, not marketing banner",
-      "style": ["blue top rule", "short headline", "brief support line", "small civic stats"]
+      "style": ["blue top rule", "short headline", "brief support line", "small civic stats", "square-edged containers"]
     },
     "filters": {
       "purpose": "Persistent event narrowing",
-      "style": ["sticky on desktop", "rounded form controls", "quiet labels"]
+      "style": ["sticky on desktop", "square form controls", "quiet labels"]
     },
     "eventCard": {
       "purpose": "Scan-friendly event summary",
-      "style": ["title first", "metadata pills", "subtle hover lift", "public-service clarity"]
+      "style": ["title first", "square metadata labels", "subtle hover lift", "public-service clarity"]
     },
     "detailCard": {
       "purpose": "Structured event facts",
-      "style": ["two-column meta grid", "matching civic card shell"]
+      "style": ["two-column meta grid", "matching civic card shell", "square corners"]
     }
   }
 }

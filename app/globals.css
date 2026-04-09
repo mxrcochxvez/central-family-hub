@@ -12,9 +12,10 @@
   --warning-soft: #fff3e8;
   --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.06);
   --shadow-hover: 0 12px 28px rgba(15, 23, 42, 0.1);
-  --radius-lg: 20px;
-  --radius-md: 14px;
-  --radius-sm: 10px;
+  --radius-lg: 0px;
+  --radius-md: 0px;
+  --radius-sm: 0px;
+  --radius-pill: 0px;
   --space-1: 8px;
   --space-2: 12px;
   --space-3: 16px;
@@ -143,11 +144,12 @@ select {
   display: inline-flex;
   width: fit-content;
   padding: 8px 12px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: var(--accent-soft);
   color: var(--accent);
   font-size: 13px;
   font-weight: 700;
+  border: 1px solid #c9d9eb;
 }
 
 .hero h1 {
@@ -331,17 +333,20 @@ select {
   display: inline-flex;
   align-items: center;
   padding: 8px 10px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: var(--accent-soft);
   font-size: 13px;
+  border: 1px solid #c9d9eb;
 }
 
 .price-pill-free {
   background: var(--success-soft);
+  border-color: #cde7d6;
 }
 
 .price-pill-paid {
   background: var(--warning-soft);
+  border-color: #f0d8bf;
 }
 
 .event-detail {
