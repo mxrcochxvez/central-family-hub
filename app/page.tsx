@@ -25,46 +25,62 @@ export default function HomePage({ searchParams }: HomePageProps) {
   })
 
   return (
-    <main className="page-shell">
-      <header className="topbar">
-        <div className="brand">
-          <div className="brand-mark">FH</div>
-          <div>
-            <p className="brand-title">Family Hub</p>
-            <p className="brand-subtitle">Fresno + Clovis</p>
+    <main>
+      <section className="civic-band">
+        <div className="page-shell civic-band-inner">
+          <div className="brand brand-light">
+            <div className="brand-mark brand-mark-light">FH</div>
+            <div>
+              <p className="brand-title">Family Hub</p>
+              <p className="brand-subtitle brand-subtitle-light">Fresno + Clovis events</p>
+            </div>
           </div>
-        </div>
-        <button className="hero-button">Browse</button>
-      </header>
-
-      <section className="hero hero-compact">
-        <span className="hero-eyebrow">Local family events</span>
-        <div>
-          <h1>Find your next event.</h1>
-          <p>Simple filters. Clear details. Local plans.</p>
+          <button className="hero-button hero-button-light">Browse events</button>
         </div>
       </section>
 
-      <div className="layout-grid">
-        <Filters />
-
-        <section className="content">
-          <div className="results-bar">
+      <main className="page-shell">
+        <section className="hero hero-civic">
+          <span className="hero-eyebrow">Local family events</span>
+          <div className="hero-main">
             <div>
-              <h2>Events</h2>
-              <p className="results-meta">
-                {filteredEvents.length} {filteredEvents.length === 1 ? 'event' : 'events'} found
-              </p>
+              <h1>Find events near you.</h1>
+              <p>Simple filters. Clear details. Local plans.</p>
+            </div>
+            <div className="hero-stats">
+              <div className="hero-stat-card">
+                <strong>{filteredEvents.length}</strong>
+                <span>Events</span>
+              </div>
+              <div className="hero-stat-card">
+                <strong>2</strong>
+                <span>Cities</span>
+              </div>
             </div>
           </div>
-
-          <div className="card-grid">
-            {filteredEvents.map((event) => (
-              <EventCard key={event.id} event={event} />
-            ))}
-          </div>
         </section>
-      </div>
+
+        <div className="layout-grid">
+          <Filters />
+
+          <section className="content">
+            <div className="results-bar results-bar-civic">
+              <div>
+                <h2>Upcoming events</h2>
+                <p className="results-meta">
+                  {filteredEvents.length} {filteredEvents.length === 1 ? 'event' : 'events'} found
+                </p>
+              </div>
+            </div>
+
+            <div className="card-grid">
+              {filteredEvents.map((event) => (
+                <EventCard key={event.id} event={event} />
+              ))}
+            </div>
+          </section>
+        </div>
+      </main>
     </main>
   )
 }

@@ -1,35 +1,37 @@
 {
   "name": "family-hub-design-schema",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "principles": [
+    "Civic-inspired trust",
     "Event-first layout",
     "Minimal copy",
-    "Calm civic visual tone",
-    "Clear scan paths",
-    "Soft, trustworthy surfaces"
+    "Clear public-service hierarchy",
+    "Consistent municipal blue accents"
   ],
   "tokens": {
     "colors": {
-      "background": "#ffffff",
+      "background": "#f4f7fb",
       "foreground": "#1f2937",
-      "muted": "#667085",
+      "muted": "#6b7280",
       "card": "#ffffff",
-      "surface": "#f8fafc",
-      "border": "#d7e0ea",
-      "accent": "#0b4a8b",
-      "accentSoft": "#eaf2fb",
-      "successSoft": "#eaf7ef",
-      "warningSoft": "#fff4ea"
+      "surface": "#eef3f9",
+      "border": "#d6e0eb",
+      "accent": "#0a4a85",
+      "accentDark": "#083a69",
+      "accentSoft": "#e7f0fa",
+      "successSoft": "#ebf7ef",
+      "warningSoft": "#fff3e8",
+      "goldRule": "#d9a441"
     },
     "radius": {
-      "lg": "24px",
-      "md": "18px",
-      "sm": "14px",
+      "lg": "20px",
+      "md": "14px",
+      "sm": "10px",
       "pill": "999px"
     },
     "shadow": {
       "soft": "0 8px 24px rgba(15, 23, 42, 0.06)",
-      "hover": "0 12px 30px rgba(15, 23, 42, 0.1)"
+      "hover": "0 12px 28px rgba(15, 23, 42, 0.1)"
     },
     "spacing": {
       "1": "8px",
@@ -37,37 +39,37 @@
       "3": "16px",
       "4": "20px",
       "5": "24px",
-      "6": "28px"
+      "6": "32px"
     }
   },
   "typography": {
     "fontFamily": "Arial, Helvetica, sans-serif",
-    "heroTitle": "clamp(32px, 4vw, 48px)",
+    "heroTitle": "clamp(32px, 4vw, 46px)",
     "cardTitle": "19px",
     "body": "16px",
     "meta": "14px",
     "eyebrow": "13px"
   },
   "components": {
-    "topbar": {
-      "purpose": "Light brand anchor with single action",
-      "style": ["surface background", "large radius", "soft shadow"]
+    "civicBand": {
+      "purpose": "Municipal header anchor",
+      "style": ["deep blue band", "gold divider rule", "white utility action"]
     },
     "hero": {
-      "purpose": "Compact orientation, not marketing",
-      "style": ["single message", "one short supporting line", "no promo cards"]
+      "purpose": "Orientation block, not marketing banner",
+      "style": ["blue top rule", "short headline", "brief support line", "small civic stats"]
     },
     "filters": {
       "purpose": "Persistent event narrowing",
-      "style": ["sticky on desktop", "rounded controls", "low-noise labels"]
+      "style": ["sticky on desktop", "rounded form controls", "quiet labels"]
     },
     "eventCard": {
       "purpose": "Scan-friendly event summary",
-      "style": ["title first", "metadata pills", "subtle hover lift"]
+      "style": ["title first", "metadata pills", "subtle hover lift", "public-service clarity"]
     },
     "detailCard": {
       "purpose": "Structured event facts",
-      "style": ["two-column meta grid", "consistent card shells"]
+      "style": ["two-column meta grid", "matching civic card shell"]
     }
   }
 }
