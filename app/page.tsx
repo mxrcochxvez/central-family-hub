@@ -26,13 +26,23 @@ export default function HomePage({ searchParams }: HomePageProps) {
 
   return (
     <main className="page-shell">
-      <section className="hero">
-        <span className="hero-eyebrow">Fresno + Clovis family events</span>
-        <h1>Find something fun to do with your kids this weekend</h1>
-        <p>
-          This starter MVP helps local parents discover simple, kid-friendly plans without digging
-          through scattered Facebook posts and websites.
-        </p>
+      <header className="topbar">
+        <div className="brand">
+          <div className="brand-mark">FH</div>
+          <div>
+            <p className="brand-title">Family Hub</p>
+            <p className="brand-subtitle">Fresno + Clovis</p>
+          </div>
+        </div>
+        <button className="hero-button">Browse</button>
+      </header>
+
+      <section className="hero hero-compact">
+        <span className="hero-eyebrow">Local family events</span>
+        <div>
+          <h1>Find your next event.</h1>
+          <p>Simple filters. Clear details. Local plans.</p>
+        </div>
       </section>
 
       <div className="layout-grid">
@@ -41,7 +51,7 @@ export default function HomePage({ searchParams }: HomePageProps) {
         <section className="content">
           <div className="results-bar">
             <div>
-              <h2>Upcoming events</h2>
+              <h2>Events</h2>
               <p className="results-meta">
                 {filteredEvents.length} {filteredEvents.length === 1 ? 'event' : 'events'} found
               </p>

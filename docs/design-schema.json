@@ -1,0 +1,73 @@
+{
+  "name": "family-hub-design-schema",
+  "version": "1.0.0",
+  "principles": [
+    "Event-first layout",
+    "Minimal copy",
+    "Calm civic visual tone",
+    "Clear scan paths",
+    "Soft, trustworthy surfaces"
+  ],
+  "tokens": {
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#1f2937",
+      "muted": "#667085",
+      "card": "#ffffff",
+      "surface": "#f8fafc",
+      "border": "#d7e0ea",
+      "accent": "#0b4a8b",
+      "accentSoft": "#eaf2fb",
+      "successSoft": "#eaf7ef",
+      "warningSoft": "#fff4ea"
+    },
+    "radius": {
+      "lg": "24px",
+      "md": "18px",
+      "sm": "14px",
+      "pill": "999px"
+    },
+    "shadow": {
+      "soft": "0 8px 24px rgba(15, 23, 42, 0.06)",
+      "hover": "0 12px 30px rgba(15, 23, 42, 0.1)"
+    },
+    "spacing": {
+      "1": "8px",
+      "2": "12px",
+      "3": "16px",
+      "4": "20px",
+      "5": "24px",
+      "6": "28px"
+    }
+  },
+  "typography": {
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "heroTitle": "clamp(32px, 4vw, 48px)",
+    "cardTitle": "19px",
+    "body": "16px",
+    "meta": "14px",
+    "eyebrow": "13px"
+  },
+  "components": {
+    "topbar": {
+      "purpose": "Light brand anchor with single action",
+      "style": ["surface background", "large radius", "soft shadow"]
+    },
+    "hero": {
+      "purpose": "Compact orientation, not marketing",
+      "style": ["single message", "one short supporting line", "no promo cards"]
+    },
+    "filters": {
+      "purpose": "Persistent event narrowing",
+      "style": ["sticky on desktop", "rounded controls", "low-noise labels"]
+    },
+    "eventCard": {
+      "purpose": "Scan-friendly event summary",
+      "style": ["title first", "metadata pills", "subtle hover lift"]
+    },
+    "detailCard": {
+      "purpose": "Structured event facts",
+      "style": ["two-column meta grid", "consistent card shells"]
+    }
+  }
+}
